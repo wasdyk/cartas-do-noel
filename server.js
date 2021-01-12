@@ -36,6 +36,12 @@ app.get('/', (req, res) => {
   res.json({"message": "Hello World"});
 });
 
+// Require Users routes
+const userRoutes = require('./src/routes/user.routes')
+
+// using as middleware
+app.use('/api/users', userRoutes)
+
 // listen for requests
 app.listen(port, () => {
   console.log(`Node server is listening on port ${port}`);
