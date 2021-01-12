@@ -1,0 +1,32 @@
+{
+  "name": "cartas-do-noel",
+  "version": "1.0.0",
+  "description": "CRUD app for sending/reading letters to Santa",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasdyk/cartas-do-noel.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "restful",
+    "crud"
+  ],
+  "author": "Jerry Wasdyke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wasdyk/cartas-do-noel/issues"
+  },
+  "homepage": "https://github.com/wasdyk/cartas-do-noel#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.11",
+    "nodemon": "^2.0.7"
+  }
+}
