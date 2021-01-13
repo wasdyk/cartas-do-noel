@@ -3,3 +3,6 @@
   - Had to resolve problem with the /data/db directory not existing.
 
 2. Node looked for index.js by defatault, but I was using server.js
+
+3. How to test api
+  - Used postman for testing.

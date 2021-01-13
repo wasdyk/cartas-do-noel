@@ -31,16 +31,25 @@ useNewUrlParser: true
   process.exit();
 });
 
+// Routes
+postRouter = require("./src/routes/carta.routes.js")
+app.use('/read/', postRouter);
+
+// another route
+app.get('/', (req, res) => {
+  res.send("Hello there.");
+});
+
 // define a root/default route
 app.get('/', (req, res) => {
   res.json({"message": "Hello World"});
 });
 
 // Require Users routes
-const userRoutes = require('./src/routes/user.routes')
+// const cartaRoutes = require('./src/routes/carta.routes')
 
 // using as middleware
-app.use('/api/users', userRoutes)
+// app.use('/api/users', userRoutes)
 
 // listen for requests
 app.listen(port, () => {
