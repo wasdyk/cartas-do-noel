@@ -33,7 +33,7 @@ useNewUrlParser: true
 
 // Routes
 postRouter = require("./src/routes/carta.routes.js")
-app.use('/read/', postRouter);
+app.use('/api/cartas', postRouter);
 
 // another route
 app.get('/', (req, res) => {
@@ -44,12 +44,6 @@ app.get('/', (req, res) => {
 app.get('/', (req, res) => {
   res.json({"message": "Hello World"});
 });
-
-// Require Users routes
-// const cartaRoutes = require('./src/routes/carta.routes')
-
-// using as middleware
-// app.use('/api/users', userRoutes)
 
 // listen for requests
 app.listen(port, () => {
