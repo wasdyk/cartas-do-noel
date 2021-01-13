@@ -1,5 +1,5 @@
-// Used the article below as reference
-// https://medium.com/@rahulguptalive/how-to-build-simple-restful-crud-api-with-nodejs-expressjs-and-mongodb-2d25a0e27937
+// Jerry Wasdyke
+// Zappts teste tecnico
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -35,14 +35,9 @@ useNewUrlParser: true
 postRouter = require("./src/routes/carta.routes.js")
 app.use('/api/cartas', postRouter);
 
-// another route
-app.get('/', (req, res) => {
-  res.send("Hello there.");
-});
-
 // define a root/default route
 app.get('/', (req, res) => {
-  res.json({"message": "Hello World"});
+  res.json({"message": "Voce pode buscar API a /api/cartas/"});
 });
 
 // listen for requests

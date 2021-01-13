@@ -1,8 +1,7 @@
-1. getting the mongoDB to initally run
+1. Nunca tentou comecar uma instancia do mongodb no meu notebook mesmo. Com isso eu tinha dificuldades.
   - Had to go back and resolve all of the prerequisite software installs
-  - Had to resolve problem with the /data/db directory not existing.
+  - O lugar para aguarda os dados noa existia. Manualmente, eu tinha que criar o destino.
 
-2. Node looked for index.js by defatault, but I was using server.js
+2. Usando o default, node procorou para um file index.js. Eu tinha que mudar a configuracao.
 
-3. How to test api
-  - Used postman for testing.
+3. Eu tinha dificuldades testando o API direitamente. Instalei e usei o servico postman para ajudar com testando.

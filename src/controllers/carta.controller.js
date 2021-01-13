@@ -46,19 +46,19 @@ exports.findAll = (req, res) => {
     }); 
 };
 
-// Find a single carta with an id
+// Find a single carta with a name
 exports.findOne = (req, res) => {
-  const id = req.params.id;
+  const name = req.params.name;
 
-  Carta.findById(id)
+  Carta.findById(name)
     .then(data => {
       if (!data)
-        res.status(404).send({ message: "Carta not found with id " + id });
+        res.status(404).send({ message: "Carta not found with name " + name });
       else res.send(data);
     })
     .catch(err => {
       res
         .status(500)
-        .send({ message: "Error retrieving Carta with id=" + id });
+        .send({ message: "Error retrieving Carta with name=" + name });
     });
 };
